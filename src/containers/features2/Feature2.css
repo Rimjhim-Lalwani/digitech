@@ -1,0 +1,126 @@
+.r1container_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-family: var(--font-family);
+  }
+  
+  .r1card1_ {
+    z-index: 2;
+    width: 250px;
+    height: 330px;
+    background-color:#040c18;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 5px; */
+    margin: 40px;
+    /* padding: -5px ; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+  
+    border-radius: 0.5rem;
+    /* flex:1 1 30rem; */
+  
+    position: relative;
+  }
+  .c {
+    z-index: -2;
+    position: absolute;
+    top: -120%;
+    left: -165%;
+    height: 400px;
+    width: 400px;
+    border-radius: 60px;
+    text-align: center;
+    background: rgba(219, 54, 112, 0.874);
+    padding: 2rem;
+    padding-top: 5rem;
+    transition: 0.5s all ease;
+  }
+  .r1card1_:hover .c {
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    top: 0;
+    left: -40%;
+  }
+  .r1card1_ h1 {
+    font-size: 1.2rem;
+  }
+  .r1image_ {
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+  }
+  .r1card1_:hover p{
+    color: rgb(0, 0, 0);
+  }
+  .r1details_ hr {
+    color: rgb(255, 255, 255);
+  }
+  
+  .r1name_ {
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(199, 35, 126);
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-shadow: 0.3rem 0.5 rem rgb(255, 255, 255);
+  }
+  
+  .r1details_ {
+    text-align: center;
+    align-items: center;
+    /* padding-top: 50px; */
+    padding: 10px;
+    margin-top: 10px;
+    height: 5rem;
+  }
+  
+  .r1details_ p {
+    font-size: 13px;
+    color: white;
+    
+  }
+  .r1container_ .r1card1_ a{
+    text-decoration: none;
+  }
+  .r1container_ .r1card1_ button {
+    color: white;
+    
+    background-color: rgba(224, 62, 148, 0.842);
+    border: 0px solid black;
+    border-radius: 15px;
+    display: inline;
+    position: relative;
+    font-weight: 700;
+    width: 100px;
+    height: 2rem;
+    font-size: 0.7rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .r1container_ .r1card1_ button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .r1feature {
+    text-align: center;
+    color: white;
+   
+   font-size: 30px;
+
+
+    font-family: var(--font-family);
+  }
+  
+  @media screen and (max-width:950px){
+    .r1container_{
+      flex-direction: column;
+    }
+  }

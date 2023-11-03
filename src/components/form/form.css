@@ -1,0 +1,66 @@
+.formcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0.3rem .3rem .1rem rgb(243, 42, 126);
+padding: 50px;  
+
+margin: 5%;
+margin-left:33% ; 
+
+ }
+.formfield{
+  display: flex;
+  flex-direction:column;
+  color: rgb(0, 0, 0);
+  border: 1px gray;
+  
+}
+.formfield input{
+  width: 400px;
+  height: 40px;
+
+  border-radius: 50px;
+}
+.formfield textarea{
+  width: 400px;
+  height: 80px;
+}
+.formbtn{
+  height: 30px;
+  border-radius: 20px;
+  width:100px;
+  background-color: rgb(240, 29, 113);
+  color: rgb(255, 255, 255);
+  margin:20px;
+}
+@media screen and (max-width:940px) {
+  /* .formfield input{
+    width: 150px;
+  } */
+ .formcontainer{
+  width: 80%;
+  margin: 10%;
+ }
+  /* .formfield textarea{
+    width: 100px;
+    height: 80px;
+  } */
+}
+@media screen and (max-width:550px) {
+  .formfield input{
+    width: 90%;
+  }
+ /* .formcontainer{
+  width: 80%;
+  margin: 10%;
+ } */
+  .formfield textarea{
+    width:90%;
+    height: 80px;
+  }
+}
